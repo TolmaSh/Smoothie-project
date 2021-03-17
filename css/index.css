@@ -4,6 +4,7 @@ a {
 }
 ul {
     padding: 0;
+    margin: 0;
 }
 .btn {
     display: flex;
@@ -33,20 +34,32 @@ ul {
 }
 .nav__list {
     display: flex;
-    line-height: 2.5;
     letter-spacing: 0.32px;
     list-style-type: none ;
     color: #ffffff;
     
 }
+.nav__item {
+    margin-left: 30px;
+}
+.nav__item:first-child {
+    margin-left: 0;
+}
 .nav__link {
     font-size: 16px;
-    margin-left: 30px;
     color: #ffffff;
+}
+.logo__link {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
 }
 .header__right-content {
     display: flex;
     align-items:center;
+}
+.Header__personal {
+    margin-right: 120px;
 }
 .personal__list {
     display: flex;
@@ -59,17 +72,11 @@ ul {
 .personal__item:first-child {
     margin-left: 0;
 }
-.personal__item:last-child {
-    margin-right: 121px;
-}
 .social__list {
     display: flex;
     list-style-type: none ;
 }
 .social__item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #ffffff;
     width: 35px;
     height: 35px;
@@ -79,9 +86,79 @@ ul {
 .social__item:first-child {
     margin-left: 0;
 }
+.social__link {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .Header__btn {
     margin-top: 110px;
     padding-bottom: 764px;
 }
 
-
+/* ABOUT */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about__title {
+    color: #f7ae3b;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 0.8;
+    letter-spacing: -1px;
+    margin-top: 98px;
+    margin-bottom: 55px;
+}
+.about__text {
+    max-width: 915px;
+    text-align: center;
+    line-height: 1.94;
+    font-size: 18px;
+    margin: 0;
+}
+.about__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 915px;
+    margin-top: 65px;
+    padding-bottom: 107px;
+    
+}
+.about__item {
+    border-left: 1px solid #f6edde;
+    border-bottom: 1px solid #f6edde;;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex: 1 0 25%; */
+    flex-grow: 1;
+    flex-basis: 25%;
+    box-sizing: border-box;
+    height: 190px;
+}
+.about__item--border-bottom {
+    border-bottom: 0;
+}
+.about__item:first-child, .about__item:nth-child(5) {
+    border-left: 0;
+}
+.about__img {
+    margin-top: 30px;
+}
+.about__item-title {
+    margin-top: 30px;
+    text-align: center;
+    color: #f2612d;
+    letter-spacing: -0.5px;
+    font-size: 25px;
+    font-weight: 800;
+}
+.about-img--margin-top {
+    margin-top: 40px;
+}
