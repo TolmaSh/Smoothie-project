@@ -6,11 +6,7 @@ ul {
     padding: 0;
     margin: 0;
 }
-.btn {
-    display: flex;
-    align-items:center;
-    justify-content: center;
-}
+
 .btn__item {
     border:none;
     font-family: "Muli-ExtraBold";
@@ -122,6 +118,9 @@ ul {
 .Header__btn {
     margin-top: 110px;
     padding-bottom: 764px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
 /* ABOUT */
@@ -190,4 +189,58 @@ ul {
 }
 .about-img--margin-top {
     margin-top: 40px;
+}
+/* FEATURES */
+.features {
+    display: flex;
+    background-color: #14826f;
+    padding-top: 100px;
+    
+}
+.features__img {
+    margin-right: 140px;
+    margin-left: 140px;
+}
+.features__content {
+    margin-right: 356px;
+}
+.features__title {
+    
+    line-height: 1.09;
+    letter-spacing: -1.1px;
+    color: #ffffff;
+    font-size: 55px;
+    font-family: "Muli-ExtraBold";
+
+}
+.features__title-lead {
+    color: #cae941;
+}
+.features__list {
+    margin-left: 30px;
+}
+.features__item {
+    list-style-image: url(/assets/images/features-list.png);
+    font-family: "Muli-Regular";
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: normal;
+    line-height: 1.05;
+    padding-left: 15px;
+    margin-bottom: 25px;
+    
+}
+
+.features__item--bold {
+    font-family: "Muli-ExtraBold";
+}
+.features__btn {
+    margin-top: 50px;
+    
+}
+.features__btn-item {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    border: solid 2px #f8b231;
+    font-size: 21px;
 }
