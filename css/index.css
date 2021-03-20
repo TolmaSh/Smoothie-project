@@ -14,6 +14,21 @@ ul {
     border-radius: 35px;
     background-color: #0aa566;
 }
+.title {
+    color: #f7ae3b;
+    font-size: 50px;
+    font-family: "Muli-ExtraBold";
+    font-weight: 800;
+    line-height: 0.8;
+    letter-spacing: -1px;
+    margin: 0;
+}
+.text {
+    line-height: 1.94;
+    font-family: "Muli-Regular";
+    font-size: 18px;
+    margin: 0;
+}
 @font-face {
     font-family: "Muli-Bold";
     src: url(/assets/fonts/Muli-Bold.ttf) format("truetype");
@@ -132,22 +147,13 @@ ul {
     align-items: center;
 }
 .about__title {
-    color: #f7ae3b;
-    font-size: 50px;
-    font-family: "Muli-ExtraBold";
-    font-weight: 800;
-    line-height: 0.8;
-    letter-spacing: -1px;
+    
     margin-top: 98px;
     margin-bottom: 55px;
 }
 .about__text {
     max-width: 915px;
     text-align: center;
-    line-height: 1.94;
-    font-family: "Muli-Regular";
-    font-size: 18px;
-    margin: 0;
 }
 .about__items {
     display: flex;
@@ -291,4 +297,28 @@ ul {
     margin-top: 65px;
     height: 60px;
     width: 200px;
+}
+/* STORY */
+.story {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+.story__title {
+    margin-top: 140px;
+}
+.story__text {
+    margin-top: 40px;
+    max-width: 510px;
+    margin-right: 200px;
+}
+.story__btn {
+    border-radius: 30px;
+    font-size: 21px;
+    border:none;
+    padding: 0;
+    margin-top: 60px;
+    height: 60px;
+    width: 300px;
 }
