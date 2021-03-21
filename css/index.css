@@ -104,9 +104,33 @@ ul {
 }
 .personal__item {
     margin-left: 45px;
+    display: flex;
 }
 .personal__item:first-child {
     margin-left: 0;
+}
+
+.personal__counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    align-self: flex-start;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    font-family: "Muli-Regular";
+    width: 20px;
+    height: 20px;
+    transform: translate(0px, -10px);
+    border-radius:50%        ;
+    -webkit-border-radius:50%        ;
+    -moz-border-radius:50%        ;
+    -ms-border-radius:50%        ;
+    -o-border-radius:50%        ;
+    -webkit-transform: translate(0px, -10px);
+    -moz-transform: translate(0px, -10px);
+    -ms-transform: translate(0px, -10px);
+    -o-transform: translate(0px, -10px);
 }
 .social__list {
     display: flex;
@@ -202,13 +226,33 @@ ul {
 /* FEATURES */
 .features {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: #14826f;
-    padding-top: 100px;
+    
+    
+}
+.features__container{
+    display: flex;
+    max-width: 1450px;
+    justify-content: space-between;
+
+    
+}
+.features__img {
+    
+    transform: translate(0px, 80px);
+    -webkit-transform: translate(0px, 80px);
+    -moz-transform: translate(0px, 80px);
+    -ms-transform: translate(0px, 80px);
+    -o-transform: translate(0px, 80px);
+}
+.features__content {
+    margin-left: 140px;
+    transform: translate(0px, 80px);
     
 }
 .features__title {
-    
+    margin-top: 0;
     line-height: 1.09;
     letter-spacing: -1.1px;
     color: #ffffff;
@@ -233,11 +277,15 @@ ul {
     margin-bottom: 25px;
     
 }
+.features__item:last-child {
+    margin-bottom: 40px;
+}
 
 .features__item--bold {
     font-family: "Muli-ExtraBold";
 }
 .features__btn {
+
     background-color: rgba(255, 255, 255, 0);
     border-radius: 30px;
     border: solid 2px #f8b231;
@@ -430,11 +478,118 @@ margin-top: 50px;
     margin-top: 45px;
 }
 .gallery__img {
-    display: flex;
+    flex:0 1 20%;
     
 }
 .gallery__item {
     /* box-sizing:border-box;
     flex: 0 1 20%; */
     width: 100%;
+    height: 100%;
+}
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__top {
+    padding-bottom: 100px;
+    padding-top: 80px;
+    width: 100%;
+    background-color: #f6ab3b;
+    display: flex;
+    justify-content: space-around;
+}
+.footer__logo {
+    margin:auto 0;
+}
+.footer__title {
+    font-family: "Muli-ExtraBold";
+    font-size: 26px;
+    color: #ffffff;
+    line-height: 1.54;
+    letter-spacing: -0.52px;
+}
+.footer__information-item {
+    list-style-type: none;
+    font-size: 18px;
+    font-family: "Muli-Bold";
+    line-height: 1.94;
+    letter-spacing: -0.36px;
+    color:#6d450c;
+}
+.footer__payment {
+    
+    max-width: 240px;
+}
+
+.footer__payment-item {
+    margin-right: 10px;
+    margin-top: 10px;
+    
+}
+.footer__email {
+    width: 495px;
+    height: 60px;
+    border:none;
+    border-radius: 30px;
+    background-color: #ffffff;
+}
+.footer__email::placeholder {
+    font-size: 17px;
+    font-family: "Muli-Bold";
+    color: #6d450c;
+    line-height: 2.06;
+    letter-spacing: -0.34px;
+    padding-left: 60px;
+}
+.footer__socials-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 35px;
+}
+.footer__btn {
+    background-color: transparent;
+    border:0;
+    font-size: 18px;
+    font-family: "Muli-ExtraBold";
+    text-transform: uppercase;
+    color: #6d450c;
+    margin-right: 40px;
+    letter-spacing: -0.36px;
+}
+
+.footer__social {
+    display: flex;
+}
+.social__item--background {
+    background-color: transparent;
+}
+
+.footer__bottom {
+    background-color: #6c2c1c;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer__copyright {
+    color: #af8a82;
+    font-size: 13px;
+    font-family: "Muli-Regular";
+    line-height: 2.69;
+    letter-spacing: 0.26px;
+    
+}
+.footer__go-top {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    color:#ffffff;
+    font-size: 16px;
+    font-family: "Muli-Bold";
+    letter-spacing: -0.32px;
 }
