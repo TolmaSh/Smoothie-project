@@ -68,6 +68,8 @@ ul {
     background-repeat: no-repeat;
     padding-bottom: 764px;
     background-position: center;
+    position: relative;
+    z-index: 2;
 }
 .Header__top {
     display: flex;
@@ -762,6 +764,7 @@ margin-top: 50px;
     
 }
 .footer__go-top {
+    z-index: 1;
     position: fixed;
     bottom: 20px;
     right: 165px;
