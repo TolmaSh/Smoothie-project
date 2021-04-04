@@ -683,6 +683,9 @@ z-index: 2;
     letter-spacing: -0.52px;
     
 }
+.footer__top-informations {
+    display: flex;
+}
 .footer__information-item {
     list-style-type: none;
     font-size: 18px;
@@ -692,7 +695,7 @@ z-index: 2;
     color:#6d450c;
 }
 .footer__payment {
-    
+    margin-left: 150px;
     max-width: 240px;
 }
 .footer__payment-wrapper {
@@ -815,7 +818,7 @@ z-index: 2;
     -ms-transform: translate(15px, -40px);
     -o-transform: translate(15px, -40px);
 }
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1440px) {
     body,html {
         font-size: 9px;
     }
@@ -837,4 +840,97 @@ z-index: 2;
     .features__title:after  {
         right: 50px;
     }
+    .story__content {
+        padding-left: 30px;
+    }
+    .footer__payment {
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    body,html {
+        font-size: 8px;
+    }
+    .features {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .features__content  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translate(0,0)    ;
+        -webkit-transform: translate(0,0)    ;
+        -moz-transform: translate(0,0)    ;
+        -ms-transform: translate(0,0)    ;
+        -o-transform: translate(0,0)    ;
+}
+    .features__img {
+        display: none;
+    }
+    .features__title {
+        margin-bottom: 100px;
+    }
+    .features__title:after  {
+        right: 0;
+    }
+    .features__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    .features__item {
+    flex-grow: 1;
+    flex-basis: 45%;
+    }
+    .shop {
+        overflow-x: scroll;
+    }
+    .shop__item {
+        flex-shrink: 0;
+    }
+    .story__img-item {
+        width: 90%;
+        height: 90%;
+    }
+    .reviews:before {
+        display: none;
+    }
+    .blog__left {
+        padding-left: 30px;
+    }
+    .blog__img {
+        width: 400px;
+    }
+    .blog__content-text {
+        margin-left: 60px;
+    }
+    .footer__logo {
+        transform: translateX(-55px);
+        -webkit-transform: translateX(-55px);
+        -moz-transform: translateX(-55px);
+        -ms-transform: translateX(-55px);
+        -o-transform: translateX(-55px);
+}
+    .footer__top {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__information {
+    max-width: 240px;
+    margin-left: 0;
+    }
+    .footer__payment {
+        margin-left: 90px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 480px) {
+
+}
+@media screen and (max-width: 320px) {
+
 }
