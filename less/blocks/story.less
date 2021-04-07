@@ -1,0 +1,42 @@
+// main: ./../main.less
+
+.story {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 160px;
+    &__title {
+        margin-top: 140px;
+    }
+    &__text {
+        margin-top: 40px;
+        max-width: 510px;
+        margin-right: 200px;
+    }
+    &__btn {
+        border-radius: 30px;
+        font-size: 2.1rem;
+        border:none;
+        padding: 0;
+        margin-top: 60px;
+        height: 60px;
+        width: 300px;
+    }
+    &__img {
+        position: relative;
+        &:before {
+            position: absolute;
+            content:"";
+            width: 290px;
+            height: 215px;
+            background-image:url('/assets/images/story-ingridient.png');
+            display: block;
+            transform: translate(-165px, 20px);
+            -webkit-transform: translate(-165px, 20px);
+            -moz-transform: translate(-165px, 20px);
+            -ms-transform: translate(-165px, 20px);
+            -o-transform: translate(-165px, 20px);
+        }
+    }
+}
+

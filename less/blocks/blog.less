@@ -1,0 +1,73 @@
+// main: ./../main.less
+
+.blog {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 200px;
+        &__img {
+            margin-top: 50px;
+            position: relative;
+            z-index: 2;
+            }
+        &__right {
+            position: relative;
+            margin-top: 150px;
+            &:before {
+                content:'';
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 12px;
+                width: 620px;
+                background-color: #f7ae3b;
+                z-index: 1;
+            }
+        }
+        
+        &__subtitle {
+            font-size: 3.0rem;
+            font-family: "Muli-ExtraBold";
+            color: #f2612d;
+            line-height: 1.33;
+            letter-spacing: -0.6px;
+            margin: 0;
+            margin-top: 50px;
+            margin-left: 60px;
+            margin-bottom: 15px;
+        }
+        &__date {
+            font-size: 1.6rem;
+            font-family: "Muli-Regular";
+            color: #1e1e1e;
+            margin-left: 60px;
+        
+            
+        }
+        &__text {
+            font-family: 'Muli-Regular';
+            font-size: 1.8rem;
+            line-height: 1.94;
+            max-width: 470px;
+            color: #1e1e1e;
+            margin: 0;
+            margin-top: 40px;
+            margin-left: 125px;
+            &:after{
+                content:'';
+                width: 20px;
+                height: 10px;
+                background-size: 20px 10px;
+                background-image: url('/assets/images/Arrow.png');
+                display: inline-block;
+                margin-left: 10px;
+            }
+            &-more {
+                color: #1e1e1e;
+                font-family: "Muli-ExtraBold";
+                font-style: italic;
+            }
+        }
+}
+
+

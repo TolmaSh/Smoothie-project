@@ -1,0 +1,231 @@
+// main: ./main.less
+
+@media screen and (max-width: 1500px) {
+    body,html {
+        font-size: 9px;
+    }
+    .header {
+        &__top-wrapper {
+            padding-top: 40px;
+        }
+        &__logo {
+            /* top:-35px; */
+        }
+        &__top {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .nav__item {
+        margin-left: 15px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header {
+        padding-bottom: 500px;
+        &__logo {
+            top:-40px;
+        }
+        &__top {
+            padding: 0;
+            &-wrapper {
+                padding-top: 70px;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        &__nav {
+            margin-bottom: 40px;
+        }
+        &__btn {
+            width: 250px;
+            height: 60px;
+        }
+    }
+    .features {
+        &__content {
+            margin-left: 50px;
+        }
+        &__title {
+            &:after  {
+                right: 50px;
+            }
+        }
+        
+    }
+.story__content {
+    padding-left: 30px;
+}
+.footer__payment {
+    margin-left: 40px;
+}
+    
+    
+    
+    
+    
+}
+@media screen and (max-width: 1120px) {
+    .about {
+        &__item {
+            flex-basis: 50%;
+        }
+        &__text {
+            font-size: 2.4rem;
+        }
+    }
+    
+    .features {
+        padding-bottom: 50px;
+        padding-top: 50px;
+        &__content  {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translate(0,0)    ;
+            -webkit-transform: translate(0,0)    ;
+            -moz-transform: translate(0,0)    ;
+            -ms-transform: translate(0,0)    ;
+            -o-transform: translate(0,0)    ;
+        }
+        &__img {
+            display: none;
+        }
+        &__title {
+            margin-bottom: 100px;
+            &__title:after  {
+                right: 0;
+            }
+        }
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+        &__item {
+        flex-grow: 1;
+        flex-basis: 45%;
+        }
+    }
+    
+    .shop {
+        overflow-x: scroll;
+        &__item {
+            flex-shrink: 0;
+            flex-basis: 70%;
+        }
+    }
+    
+    .story__img-item {
+        width: 90%;
+        height: 90%;
+    }
+    .reviews:before {
+        display: none;
+    }
+    .blog {
+        &__left {
+            padding-left: 30px;
+        }
+        &__img {
+            width: 400px;
+        }
+        &__content-text {
+            margin-left: 60px;
+        }
+    }
+    
+    .footer {
+        &__logo {
+            transform: translateX(-55px);
+            -webkit-transform: translateX(-55px);
+            -moz-transform: translateX(-55px);
+            -ms-transform: translateX(-55px);
+            -o-transform: translateX(-55px);
+        }
+        &__top {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__information {
+        max-width: 240px;
+        margin-left: 0;
+        }
+        &__payment {
+            margin-left: 90px;
+        }
+    }
+    
+    
+}
+@media screen and (max-width: 768px) {
+    .header { 
+        &__top {
+            &-wrapper {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                position: fixed;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: rgb(35, 129, 71);
+                z-index: 6;
+                /* display: none; */
+            }
+        }
+        &__burger-img {
+            display: block;
+            z-index: 6;
+        }
+        &__content {
+            flex-direction: column;
+        }
+        &__personal {
+            margin-right: 0;
+        }
+        &__social {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            &::before {
+                display: none;
+            }
+        }
+        
+    }
+    .nav {
+        &__list {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            margin: 0;
+            margin-bottom: 40px;
+        }
+        &__link {
+            font-size: 3rem;
+            
+        }
+    }
+.social__item {
+    margin-left: 15px;
+}
+
+
+}
+@media screen and (max-width: 480px) {
+    .header__social {
+        margin-bottom: 20px;
+    }
+    .nav__item {
+        margin-bottom: 15px;
+    }
+    .nav__link {
+        font-size: 1.5rem;
+    }
+
+}
+@media screen and (max-width: 320px) {
+
+}

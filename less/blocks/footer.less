@@ -1,0 +1,186 @@
+// main: ./../main.less
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__top {
+        padding-bottom: 90px;
+        padding-top: 70px;
+        width: 100%;
+        background-color: #f6ab3b;
+        display: flex;
+        justify-content: space-around;
+        &-informations {
+            display: flex;
+        }
+    }
+    &__logo {
+        margin:auto 0;
+    }
+    &__title {
+        font-family: "Muli-ExtraBold";
+        font-size: 2.6rem;
+        color: #ffffff;
+        line-height: 1.54;
+        letter-spacing: -0.52px;
+        
+    }
+    &__information-item {
+        list-style-type: none;
+        font-size: 18px;
+        font-family: "Muli-Bold";
+        line-height: 1.94;
+        letter-spacing: -0.36px;
+        color:#6d450c;
+    }
+    &__payment {
+        margin-left: 150px;
+        max-width: 240px;
+        &-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        &-item {
+            margin-right: 10px;
+            margin-top: 25px;
+            
+        }
+        &-item:nth-child(n+1):nth-child(-n+4) {
+            margin-top: 0;
+        }
+    }
+    &__form {
+        position: relative;
+        &:before {
+            position: absolute;
+            content:"";
+            width: 24px;
+            height: 19px;
+            background-image: url(/assets/images/footer-email.png);
+            top: 35%;
+            left: 20px;
+        }
+    }
+    &__email {
+        width: 495px;
+        height: 60px;
+        border:none;
+        border-radius: 30px;
+        background-color: #ffffff;
+        &::placeholder {
+            font-size: 1.7rem;
+            font-family: "Muli-Bold";
+            color: #6d450c;
+            line-height: 2.06;
+            letter-spacing: -0.34px;
+            padding-left: 60px;
+        }
+    }
+    &__socials {
+        &-wrapper {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 50px;
+            margin-top: 35px;
+            &:before {
+                content: "";
+                background-image: url(/assets/images/Arrow-follow-us.png);
+                width: 48px;
+                height: 43px;
+                margin-right: 15px;
+                transform: translate(0px, -10px);
+                -webkit-transform: translate(0px, -10px);
+                -moz-transform: translate(0px, -10px);
+                -ms-transform: translate(0px, -10px);
+                -o-transform: translate(0px, -10px);
+            }
+        }
+        
+    }
+    &__btn {
+        background-color: transparent;
+        border:0;
+        font-size: 1.8rem;
+        font-family: "Muli-ExtraBold";
+        text-transform: uppercase;
+        color: #6d450c;
+        margin-right: 40px;
+        letter-spacing: -0.36px;
+    }
+    
+    &__social {
+        display: flex;
+    }
+    &__bottom {
+        background-color: #6c2c1c;
+        width: 100%;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    &__copyright {
+        color: #af8a82;
+        font-size: 1.3rem;
+        font-family: "Muli-Regular";
+        letter-spacing: 0.26px;
+        
+    }
+    &__goTop {
+        z-index: 1;
+        position: fixed;
+        bottom: 20px;
+        right: 165px;
+        color:#ffffff;
+        font-size: 1.6rem;
+        font-family: "Muli-Bold";
+        letter-spacing: -0.32px;
+        &:after {
+            content:"";
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            background-color: #f2662f;
+            background-image: url(/assets/images/go-top-arrow.png);
+            background-position:center;
+            position: absolute;
+            background-repeat: no-repeat;
+            transform: translate(15px, -40px);
+            -webkit-transform: translate(15px, -40px);
+            -moz-transform: translate(15px, -40px);
+            -ms-transform: translate(15px, -40px);
+            -o-transform: translate(15px, -40px);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
