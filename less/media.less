@@ -17,6 +17,17 @@
     .nav__item {
         margin-left: 15px;
     }
+    .features {
+        &__content {
+            margin-left: 50px;
+        }
+        &__title {
+            &:after  {
+                right: 50px;
+            }
+        }
+        
+    }
 }
 @media screen and (max-width: 1200px) {
     body,html {
@@ -43,17 +54,7 @@
             height: 60px;
         }
     }
-    .features {
-        &__content {
-            margin-left: 50px;
-        }
-        &__title {
-            &:after  {
-                right: 50px;
-            }
-        }
-        
-    }
+    
 .story__content {
     padding-left: 30px;
 }
@@ -170,6 +171,15 @@
     
 }
 @media screen and (max-width: 1024px) {
+    .features {
+        &__content {
+            margin-left: 10px;
+        }
+        &__title {
+            font-size: 4.5rem;
+            text-align: center;
+        }
+    }
     .blog {
         flex-direction: column;
         align-items: center;
@@ -266,7 +276,7 @@
             flex-wrap: nowrap;
         }
         &__item {
-            flex-basis: 40%;
+            flex-basis: 30%;
             flex-shrink: 0;
             border-bottom: 0;
             border-left: 1px solid #f6edde !important;
@@ -274,6 +284,15 @@
         &__text {
             overflow: scroll;
             max-height: 300px;
+        }
+    }
+    .features {
+        
+        &__list {
+            flex-direction: column;
+        }
+        &__item {
+            flex-basis: 100%;
         }
     }
     
@@ -290,9 +309,10 @@
     }
     .about {
         &__text {
-            
             max-height: 250px;
-
+        }
+        &__item {
+            flex-basis: 40%;
         }
     }
     .nav {
@@ -306,6 +326,27 @@
     
 
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
+    .header {
+        &__logo {
+            transform: translateX(-32px);
+            left: 30%;
+        }
+    }
+    .features {
+        &__content {
+            margin-left: 0;
+            
+        }
+        &__title {
+            font-size: 3.7rem;
+        }
+        &__item {
+            font-size: 1.8rem;
+        }
+        &__btn {
+            width: 300px;
+        }
+    }
 
 }
