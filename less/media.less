@@ -261,6 +261,11 @@
 .social__item {
     margin-left: 15px;
 }
+.shop {
+    &__item {
+        flex-basis: 45%;
+    }
+}
 
 
 }
@@ -295,7 +300,11 @@
             flex-basis: 100%;
         }
     }
-    
+    .shop {
+        &__item {
+            flex-basis: 60%;
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -323,7 +332,12 @@
             font-size: 1.5rem;
         }
     }
-    
+    .shop {
+        &__item {
+            flex-basis: 80%;
+        }
+        
+    }
 
 }
 @media screen and (max-width: 375px) {
@@ -347,6 +361,12 @@
         &__btn {
             width: 300px;
         }
+    }
+    .shop {
+        &__item {
+            flex-basis: 100%;
+        }
+        
     }
 
 }
