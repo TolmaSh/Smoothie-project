@@ -12,6 +12,13 @@
     &__text {
         max-width: 915px;
         text-align: center;
+        &::-webkit-scrollbar-thumb {
+            background-color: rgb(189, 187, 187);
+            outline: 1px solid slategrey;
+        }
+        &::-webkit-scrollbar {
+            width: 0.2em;
+        }
     }
     &__items {
         display: flex;

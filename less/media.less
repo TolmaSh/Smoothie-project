@@ -1,9 +1,7 @@
 // main: ./main.less
 
 @media screen and (max-width: 1500px) {
-    body,html {
-        font-size: 9px;
-    }
+    
     .header {
         &__top-wrapper {
             padding-top: 40px;
@@ -21,6 +19,9 @@
     }
 }
 @media screen and (max-width: 1200px) {
+    body,html {
+        font-size: 9px;
+    }
     .header {
         padding-bottom: 500px;
         &__logo {
@@ -69,9 +70,20 @@
     .about {
         &__item {
             flex-basis: 50%;
+            &--border-bottom {
+                border-bottom: 1px solid #f6edde;
+            }
+            &:nth-child(3) , &:nth-child(7) {
+                border-left: 0;
+            }
+            &:nth-child(7) , &:last-child {
+                border-bottom: 0;
+            }
         }
         &__text {
             font-size: 2.4rem;
+            padding-left: 20px;
+            padding-right: 20px;
         }
     }
     
@@ -112,7 +124,7 @@
         overflow-x: scroll;
         &__item {
             flex-shrink: 0;
-            flex-basis: 70%;
+            flex-basis: 40%;
         }
     }
     
@@ -172,7 +184,7 @@
                 right: 0;
                 background-color: rgb(35, 129, 71);
                 z-index: 6;
-                /* display: none; */
+                display: none;
             }
         }
         &__burger-img {
@@ -214,16 +226,59 @@
 
 
 }
+@media screen and (max-width: 650px) {
+    .about {
+        &__title {
+            margin-top: 50px;
+            text-align: center;
+        }
+        &__items {
+            width: 100%;
+            overflow-x: scroll;
+            flex-wrap: nowrap;
+        }
+        &__item {
+            flex-basis: 40%;
+            flex-shrink: 0;
+            border-bottom: 0;
+            border-left: 1px solid #f6edde !important;
+        }
+        &__text {
+            overflow: scroll;
+            max-height: 300px;
+        }
+    }
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 480px) {
-    .header__social {
-        margin-bottom: 20px;
+    body,html {
+        font-size: 8px;
     }
-    .nav__item {
-        margin-bottom: 15px;
+    .header {
+        &__social {
+            margin-bottom: 20px;
+        }
     }
-    .nav__link {
-        font-size: 1.5rem;
+    .about {
+        &__text {
+            
+            max-height: 250px;
+
+        }
     }
+    .nav {
+        &__item {
+            margin-bottom: 15px;
+        }
+        &__link {
+            font-size: 1.5rem;
+        }
+    }
+    
 
 }
 @media screen and (max-width: 320px) {
