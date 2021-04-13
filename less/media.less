@@ -219,7 +219,9 @@
 }
 @media screen and (max-width: 768px) {
     .header { 
+        
         &__top {
+            
             &-wrapper {
                 display: flex;
                 flex-direction: column-reverse;
@@ -230,13 +232,14 @@
                 left: 0;
                 right: 0;
                 background-color: rgb(35, 129, 71);
-                z-index: 6;
-                display: none;
+                z-index: 99;
+                visibility: hidden;
+                overflow: hidden;
             }
         }
-        &__burger-img {
-            display: block;
-            z-index: 6;
+        &__burger {
+            display: flex;
+            
         }
         &__content {
             flex-direction: column;
@@ -260,20 +263,29 @@
         }
         &__item {
             margin: 0;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
         }
         &__link {
-            font-size: 3rem;
+            font-size: 2rem;
             
         }
     }
     .social__item {
         margin-left: 15px;
     }
+    .blog {
+        &__img {
+            z-index: 1;
+        }
+    }
     .shop {
         &__item {
             flex-basis: 45%;
         }
+    }
+    .reviews {
+        position: relative;
+        z-index: 1;
     }
     .gallery {
         &__img {

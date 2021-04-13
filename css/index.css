@@ -205,13 +205,7 @@ body, html {
     border:none;
     font-size: 2.4rem;
 }
-.header__burger-img {
-    width: 30px;
-    position: fixed;
-    top: 40px;
-    right: 40px;
-    display: none;
-}
+
 
 /* ABOUT */
 .about {
@@ -981,10 +975,6 @@ z-index: 2;
     background-color: rgb(35, 129, 71);
     z-index: 6;
     /* display: none; */
-}
-.header__burger-img {
-    display: block;
-    z-index: 6;
 }
 .header__content {
     flex-direction: column;

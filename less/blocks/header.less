@@ -63,13 +63,38 @@
             border:none;
             font-size: 2.4rem;
         }
-        &__burger-img {
-            width: 30px;
+        &__burger {
+            display: none; 
+            align-items: center;  
             position: fixed;
-            top: 40px;
-            right: 40px;
-            display: none;
+            top: 20px;
+            right: 20px;
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+            z-index: 100;
+            /* стилизуем кнопку */
+            & > span,
+            & > span::before,
+            & > span::after {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: #707070;
+                transition-duration: .25s;
+            }
+             /* добавляем "гамбургер" */
+            & > span::before {
+                content: '';
+                top: -8px;
+            }
+            & > span::after {
+                content: '';
+                top: 8px;
+            }
         }
+        
         
 }
 
