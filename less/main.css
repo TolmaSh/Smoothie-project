@@ -1075,6 +1075,10 @@ html {
   .header__social {
     margin-bottom: 20px;
   }
+  .header__burger-img {
+    top: 25px;
+    right: 30px;
+  }
   .about__text {
     max-height: 250px;
   }
@@ -1092,6 +1096,18 @@ html {
   }
   .story__btn {
     width: 220px;
+  }
+  .story__content {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .story__text {
+    text-align: center;
+  }
+  .reviews__content {
+    margin-top: 60px;
   }
 }
 @media screen and (max-width: 375px) {
