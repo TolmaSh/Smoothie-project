@@ -1109,6 +1109,13 @@ html {
   .reviews__content {
     margin-top: 60px;
   }
+  .reviews__desc {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .reviews:after {
+    transform: translate(-10px, 180px);
+  }
 }
 @media screen and (max-width: 375px) {
   .header__logo {
@@ -1129,5 +1136,12 @@ html {
   }
   .shop__item {
     flex-basis: 100%;
+  }
+  .reviews__title {
+    font-size: 3.5rem;
+  }
+  .reviews:after {
+    font-size: 11rem;
+    transform: translate(-10px, 200px);
   }
 }

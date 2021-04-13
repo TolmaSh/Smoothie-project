@@ -388,6 +388,13 @@
         &__content {
             margin-top: 60px;
         }
+        &__desc {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        &:after {
+            transform: translate(-10px, 180px);
+        }
     }
 }
 @media screen and (max-width: 375px) {
@@ -417,6 +424,15 @@
             flex-basis: 100%;
         }
         
+    }
+    .reviews {
+        &__title {
+            font-size: 3.5rem;
+        }
+        &:after {
+            font-size: 11rem;
+            transform: translate(-10px, 200px);
+        }
     }
 
 }
