@@ -336,7 +336,23 @@
             font-size: 14rem;
         }
     }
-    
+    .footer {
+        &__top {
+            &-informations {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+        &__payment {
+            margin-left: 30px;
+        }
+        &__goTop {
+            right: 80px;
+        }
+        &__email {
+            width: 400px;
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -411,12 +427,39 @@
             flex-basis: 40%;
         }
     }
+    .footer {
+        &__logo {
+            transform: translateX(-20px);
+        }
+        &__payment {
+            margin-left: 15px;
+        }
+        &__email {
+            width: 300px;
+        }
+        &__socials {
+            padding-left: 10px;
+            padding-right: 10px;
+            &-wrapper {
+                margin-right: 0;
+            }
+        }
+        &__btn {
+            margin-right: 0;
+        }
+    }
 }
 @media screen and (max-width: 375px) {
     .header {
         &__logo {
             transform: translateX(-32px);
             left: 30%;
+        }
+        &__burger {
+            &-img {
+                top: 10px;
+                right: 15px;
+            }
         }
     }
     .features {

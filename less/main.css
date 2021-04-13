@@ -1067,6 +1067,19 @@ html {
     transform: translate(-10px, 315px);
     font-size: 14rem;
   }
+  .footer__top-informations {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .footer__payment {
+    margin-left: 30px;
+  }
+  .footer__goTop {
+    right: 80px;
+  }
+  .footer__email {
+    width: 400px;
+  }
 }
 @media screen and (max-width: 480px) {
   body,
@@ -1124,11 +1137,34 @@ html {
     flex-shrink: 0;
     flex-basis: 40%;
   }
+  .footer__logo {
+    transform: translateX(-20px);
+  }
+  .footer__payment {
+    margin-left: 15px;
+  }
+  .footer__email {
+    width: 300px;
+  }
+  .footer__socials {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer__socials-wrapper {
+    margin-right: 0;
+  }
+  .footer__btn {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 375px) {
   .header__logo {
     transform: translateX(-32px);
     left: 30%;
+  }
+  .header__burger-img {
+    top: 10px;
+    right: 15px;
   }
   .features__content {
     margin-left: 0;
