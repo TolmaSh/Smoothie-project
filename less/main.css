@@ -783,9 +783,6 @@ html {
   -o-transform: translate(15px, -40px);
 }
 @media screen and (max-width: 1500px) {
-  .header__top-wrapper {
-    padding-top: 40px;
-  }
   .header__logo {
     /* top:-35px; */
   }
@@ -1023,6 +1020,10 @@ html {
   .shop__item {
     flex-basis: 45%;
   }
+  .gallery__img:before {
+    right: 5px;
+    bottom: 5px;
+  }
 }
 @media screen and (max-width: 650px) {
   .about__title {
@@ -1115,6 +1116,13 @@ html {
   }
   .reviews:after {
     transform: translate(-10px, 180px);
+  }
+  .gallery__content {
+    overflow-x: scroll;
+  }
+  .gallery__img {
+    flex-shrink: 0;
+    flex-basis: 40%;
   }
 }
 @media screen and (max-width: 375px) {

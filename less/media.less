@@ -3,9 +3,7 @@
 @media screen and (max-width: 1500px) {
     
     .header {
-        &__top-wrapper {
-            padding-top: 40px;
-        }
+        
         &__logo {
             /* top:-35px; */
         }
@@ -269,15 +267,22 @@
             
         }
     }
-.social__item {
-    margin-left: 15px;
-}
-.shop {
-    &__item {
-        flex-basis: 45%;
+    .social__item {
+        margin-left: 15px;
     }
-}
-
+    .shop {
+        &__item {
+            flex-basis: 45%;
+        }
+    }
+    .gallery {
+        &__img {
+            &:before {
+                right: 5px;
+                bottom: 5px;
+            }
+        }
+    }
 
 }
 @media screen and (max-width: 650px) {
@@ -331,6 +336,7 @@
             font-size: 14rem;
         }
     }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -394,6 +400,15 @@
         }
         &:after {
             transform: translate(-10px, 180px);
+        }
+    }
+    .gallery {
+        &__content {
+            overflow-x: scroll;
+        }
+        &__img {
+            flex-shrink: 0;
+            flex-basis: 40%;
         }
     }
 }
