@@ -27,13 +27,11 @@ if (menuLinks.length > 0) {
 const menuLogo = document.querySelector('.header__logo');
 const iconMenu = document.querySelector('.header__burger');
 const menuBody = document.querySelector('.header__nav');
-const menuHead = document.querySelector('.nav::before');
 if (iconMenu) {
 	iconMenu.addEventListener("click", function (e) {
 		document.body.classList.toggle('_lock');
 		iconMenu.classList.toggle('_active');
 		menuBody.classList.toggle('_active');
-		menuHead.classList.toggle('_active');
 		menuLogo.classList.toggle('_active');
 	});
 	
