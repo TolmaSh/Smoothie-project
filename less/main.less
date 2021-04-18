@@ -10,7 +10,10 @@ ul {
     margin: 0;
 }
 body, html {
-    font-size:10px;
+    font-size:  10px;
+}
+body._lock {
+    overflow: hidden;
 }
 
 .title {
@@ -28,26 +31,7 @@ body, html {
     font-size: 1.8rem;
     margin: 0;
 }
-/* скрываем чекбокс */
-#menu__toggle {
-    opacity: 0;
-}
-#menu__toggle:checked ~ .header__burger > span {
-    transform: rotate(45deg);
-}
-#menu__toggle:checked ~ .header__burger > span::before {
-    top: 0;
-    transform: rotate(0);
-}
-#menu__toggle:checked ~ .header__burger > span::after {
-    top: 0;
-    transform: rotate(90deg);
-}
-#menu__toggle:checked ~ .header__top-wrapper {
-    visibility: visible;
-    
-    left: 0;
-}
+
 
 
 @font-face {
