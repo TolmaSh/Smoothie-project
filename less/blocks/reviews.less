@@ -76,27 +76,25 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        &:after {
-            content:'';
-            height: 15px;
-            width: 30px;
-            background-image:url("/assets/images/Arrow.png");
-            display: inline-block;
-            margin-left: 100px;
-        }
-        &:before {
-            content:'';
-            height: 15px;
-            width: 30px;
-            background-image:url("/assets/images/Arrow.png");
-            display: inline-block;
-            transform: scale(-1, -1);
-            -webkit-transform: scale(-1, -1);
-            -moz-transform: scale(-1, -1);
-            -ms-transform: scale(-1, -1);
-            -o-transform: scale(-1, -1);
-        }
     }
+    &__prev {
+        height: 15px;
+        width: 30px;
+        background-image:url("/assets/images/Arrow.png");
+        display: inline-block;
+        transform: scale(-1, -1);
+        -webkit-transform: scale(-1, -1);
+        -moz-transform: scale(-1, -1);
+        -ms-transform: scale(-1, -1);
+        -o-transform: scale(-1, -1);
+    }
+    &__next {
+        height: 15px;
+        width: 30px;
+        background-image:url("/assets/images/Arrow.png");
+        display: inline-block;
+        margin-left: 100px;
+    }   
 
 }
 
