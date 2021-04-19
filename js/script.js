@@ -13,7 +13,12 @@ if (menuLinks.length > 0) {
 			const gotoBlock = document.querySelector(menuLink.dataset.goto);
 			const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset;
 
-			
+			if (iconMenu.classList.contains('_active')) {
+				document.body.classList.remove('_lock');
+				iconMenu.classList.remove('_active');
+				menuBody.classList.remove('_active');
+				menuLogo.classList.remove('_active');
+			}
 
 			window.scrollTo({
 				top: gotoBlockValue,
@@ -36,4 +41,3 @@ if (iconMenu) {
 	});
 	
 }
-console.log(menuLogo);

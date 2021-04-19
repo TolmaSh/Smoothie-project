@@ -223,7 +223,6 @@
         }
         &__logo {
             top: 15px;
-            
             &._active {
                 z-index: 6;
                 position: fixed;
@@ -246,7 +245,8 @@
                 height: 10%;
                 width: 100%;
                 transition: all 0.3s ease 0s;
-                background-color: #fff;
+                background-color: #858585;;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
             }
             &::before,
             &::after {
@@ -261,6 +261,17 @@
             & span {
                 top: 50%;
                 transform: scale(1) translate(0px, -50%);
+            }
+            &._active span {
+                transform: scale(0) translate(0px, -50%);
+            }
+            &._active::before {
+                top: 50%;
+                transform: rotate(-45deg) translate(0px, -50%);
+            }
+            &._active::after {
+                bottom: 50%;
+                transform: rotate(45deg) translate(0px, 50%);
             }
         }
         &__content {
@@ -415,6 +426,10 @@
         }
         &__goTop {
             right: 80px;
+            &::after {
+                width: 35px;
+                height: 35px;
+            }
         }
         &__email {
             width: 400px;
@@ -445,7 +460,7 @@
             margin-bottom: 15px;
         }
         &__link {
-            font-size: 1.5rem;
+            font-size: 3rem;
         }
     }
     .shop {
@@ -513,11 +528,56 @@
 }
 @media screen and (max-width: 375px) {
     .header {
+        padding-bottom: 350px;
         &__logo {
             transform: translateX(-32px);
             left: 30%;
         }
-        
+        &__content {
+            flex-direction: column-reverse;
+            margin-top: 150px;
+        }
+        &__personal {
+            margin-right: 0;
+        }
+        &__burger {
+            top: 0;
+            left: 0;
+        }
+    }
+    .personal {
+        &__item {
+            background-color: #0a0a0a93;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            padding: 10px;
+            & > span {
+                transform: translate(2px,0);
+                width: 20px;
+                height: 12px;
+            }
+        }
+        &__link {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .social {
+        &__item {
+            margin-left: 50px;
+            padding: 10px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        &__img {
+            width: 20px;
+            height: 21px;
+        }
     }
     .features {
         &__content {
