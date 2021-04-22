@@ -200,6 +200,7 @@
         }
         &__text {
             margin-left: 0;
+            font-size: 2.1rem;
         }
     }
     .story {
@@ -211,6 +212,7 @@
         }
         &__text {
             margin-right: 0;
+            font-size: 2.1rem;
         }
     }
     .footer {
@@ -374,19 +376,8 @@
             margin-top: 50px;
             text-align: center;
         }
-        &__items {
-            width: 100%;
-            overflow-x: scroll;
-            flex-wrap: nowrap;
-        }
-        &__item {
-            flex-basis: 30%;
-            flex-shrink: 0;
-            border-bottom: 0;
-            border-left: 1px solid #f6edde !important;
-        }
         &__text {
-            overflow: scroll;
+            
             max-height: 300px;
         }
     }
@@ -453,10 +444,7 @@
     }
     .about {
         &__text {
-            max-height: 250px;
-        }
-        &__item {
-            flex-basis: 40%;
+            font-size: 2.1rem;
         }
     }
     .nav {
@@ -550,6 +538,11 @@
             padding-left: 0;
         }
     }
+    .about {
+        &__text {
+            font-size: 1.9rem;
+        }
+    }
     
     .features {
         &__content {
@@ -566,12 +559,7 @@
             width: 300px;
         }
     }
-    .shop {
-        &__item {
-            flex-basis: 100%;
-        }
-        
-    }
+    
     .reviews {
         &__title {
             font-size: 3.5rem;
@@ -584,6 +572,11 @@
     .footer {
         &__goTop {
             font-size: 0;
+        }
+        &__payment {
+            &-item {
+                margin-right: 5px;
+            }
         }
     }
 

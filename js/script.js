@@ -1,7 +1,7 @@
 "use strict"
 
 // Прокрутка при клике
-const menuLinks = document.querySelectorAll('.nav__link[data-goto]');
+const menuLinks = document.querySelectorAll('[data-goto]');
 if (menuLinks.length > 0) {
 	menuLinks.forEach(menuLink => {
 		menuLink.addEventListener("click", onMenuLinkClick);
