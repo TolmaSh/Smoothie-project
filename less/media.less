@@ -213,6 +213,11 @@
             margin-right: 0;
         }
     }
+    .footer {
+        &__goTop {
+            right: 80px;
+        }
+    }
 }
 @media screen and (max-width: 768px) {
     .header { 
@@ -425,10 +430,9 @@
             margin-left: 30px;
         }
         &__goTop {
-            right: 80px;
             &::after {
-                width: 35px;
-                height: 35px;
+                width: 40px;
+                height: 40px;
             }
         }
         &__email {
@@ -443,7 +447,7 @@
     }
     .header {
         &__social {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
         
     }
@@ -530,55 +534,23 @@
     .header {
         padding-bottom: 350px;
         &__logo {
-            transform: translateX(-32px);
+            transform: translateX(-40px);
             left: 30%;
         }
-        &__content {
-            flex-direction: column-reverse;
-            margin-top: 150px;
+        &__social {
+            display: none;
         }
         &__personal {
             margin-right: 0;
         }
-        &__burger {
-            top: 0;
-            left: 0;
+        &__content {
+            margin-top: 130px;
+        }
+        &__nav {
+            padding-left: 0;
         }
     }
-    .personal {
-        &__item {
-            background-color: #0a0a0a93;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            padding: 10px;
-            & > span {
-                transform: translate(2px,0);
-                width: 20px;
-                height: 12px;
-            }
-        }
-        &__link {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    .social {
-        &__item {
-            margin-left: 50px;
-            padding: 10px;
-            &:first-child {
-                margin-left: 0;
-            }
-        }
-        &__img {
-            width: 20px;
-            height: 21px;
-        }
-    }
+    
     .features {
         &__content {
             margin-left: 0;
@@ -605,8 +577,13 @@
             font-size: 3.5rem;
         }
         &:after {
-            font-size: 11rem;
+            font-size: 10rem;
             transform: translate(-10px, 200px);
+        }
+    }
+    .footer {
+        &__goTop {
+            font-size: 0;
         }
     }
 
