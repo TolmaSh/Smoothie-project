@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./libraries/WOW-master/css/libs/animate.css">
     <title>Smoothie</title>
   </head>
 
@@ -123,8 +124,8 @@
       <button class="header__btn btn">Shop Now</button>
     </header>
     <section class="about">
-      <h2 class="about__title title">What are these smoothies?</h2>
-      <p class="about__text text">
+      <h2 class="about__title title wow bounceIn" data-wow-duration="2s" >What are these smoothies?</h2>
+      <p class="about__text text wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
         A smoothie is a drink made from pureed raw fruit, vegetables, and
         sometimes dairy products (milk, yogurt, ice-cream or cottage cheese),
         typically using a blender. Smoothies may be made using other
@@ -134,7 +135,7 @@
         supplements.
       </p>
       <div class="about__items">
-        <figure class="about__item">
+        <figure class="about__item wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.3s">
           <img
             class="about__img"
             src="./assets/images/plant-based.png"
@@ -143,17 +144,17 @@
           <figcaption class="about__item-title">Plant Based</figcaption>
         </figure>
 
-        <figure class="about__item">
+        <figure class="about__item wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.4s">
           <img class="about__img" src="./assets/images/vegan.png" alt="vegan" />
           <figcaption class="about__item-title">Vegan</figcaption>
         </figure>
 
-        <figure class="about__item">
+        <figure class="about__item wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.5s">
           <img class="about__img" src="./assets/images/Paleo.png" alt="paleo" />
           <figcaption class="about__item-title">Paleo</figcaption>
         </figure>
 
-        <figure class="about__item">
+        <figure class="about__item wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.6s">
           <img
             class="about__img"
             src="./assets/images/Gluten-Free.png"
@@ -162,7 +163,7 @@
           <figcaption class="about__item-title">Gluten-Free</figcaption>
         </figure>
 
-        <figure class="about__item about__item--border-bottom">
+        <figure class="about__item about__item--border-bottom wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.7s">
           <img
             class="about__img"
             src="./assets/images/Corn-Free.png"
@@ -171,7 +172,7 @@
           <figcaption class="about__item-title">Corn-Free</figcaption>
         </figure>
 
-        <figure class="about__item about__item--border-bottom">
+        <figure class="about__item about__item--border-bottom wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.8s">
           <img
             class="about__img"
             src="./assets/images/Soy-Free.png"
@@ -180,7 +181,7 @@
           <figcaption class="about__item-title">Soy-Free</figcaption>
         </figure>
 
-        <figure class="about__item about__item--border-bottom">
+        <figure class="about__item about__item--border-bottom wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.9s">
           <img
             class="about__img"
             src="./assets/images/Ayurvedic.png"
@@ -189,7 +190,7 @@
           <figcaption class="about__item-title">Ayurvedic</figcaption>
         </figure>
 
-        <figure class="about__item about__item--border-bottom">
+        <figure class="about__item about__item--border-bottom wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.95s">
           <img
             class="about__img about-img--margin-top"
             src="./assets/images/made-love.png"
@@ -506,5 +507,9 @@
       <a class="footer__goTop" data-goto=".header"  href="">Go top</a>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./libraries/WOW-master/dist/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
   </body>
 </html>
