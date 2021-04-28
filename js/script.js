@@ -41,3 +41,5 @@ if (iconMenu) {
 	});
 	
 }
+// WOW SCROLL ANIMATE
+new WOW().init();
