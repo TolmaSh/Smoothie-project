@@ -24,6 +24,13 @@ body._lock {
     line-height: 0.8;
     letter-spacing: -1px;
     margin: 0;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+    &._active {
+        opacity: 1;
+        transform: translate(0,0);
+    }
 }
 .text {
     line-height: 1.94;
