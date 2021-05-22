@@ -59,22 +59,32 @@
             width: 24px;
             height: 19px;
             background-image: url(../assets/images/footer-email.png);
-            top: 30%;
+            top: 35%;
             left: 20px;
         }
     }
     &__email {
-        width: 495px;
+        font-size: 2.5rem;
+
+        width: 435px;
         height: 60px;
         border:none;
+        font-family: "Muli-Bold";
+        color: #6d450c;
         border-radius: 30px;
         background-color: #ffffff;
         padding: 0;
+        padding-left:60px;
         &::placeholder {
             font-size: 1.7rem;
             font-family: "Muli-Bold";
             color: #6d450c;
-            padding-left: 60px;
+            
+            
+            transform: translate(15%,-5px);
+        }
+        &:focus-visible {
+            outline: 0;
         }
     }
     &__socials {
